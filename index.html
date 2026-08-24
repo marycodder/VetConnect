@@ -5,10 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
 
     <title>VetConnect | Inicio</title>
 </head>
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+</script>
 
 <body>
 
@@ -51,52 +59,116 @@
                 relacionada con tus mascotas.
             </p>
 
-            <div class="contenedor">
+<div class="container">
 
-                <div class="tarjeta">
-                    <h3>🐶 Mascotas</h3>
+    <div class="row g-4">
 
-                    <p>
+        <!-- Mascotas -->
+        <div class="col-12 col-md-6 col-lg-3">
+
+            <div class="card h-100">
+
+                <div class="card-body">
+
+                    <h5 class="card-title">
+                        🐶 Mascotas
+                    </h5>
+
+                    <p class="card-text">
                         Registra y administra la información de cada mascota.
                     </p>
 
-                    <a href="#">Ver mascotas</a>
-                </div>
+                    <a href="mascotas.html" class="btn btn-primary">
+                        Ver mascotas
+                    </a>
 
-
-                <div class="tarjeta">
-                    <h3>🩺 Consultas</h3>
-
-                    <p>
-                        Gestiona las consultas y controles veterinarios realizados.
-                    </p>
-
-                    <a href="#">Ver consultas</a>
-                </div>
-
-
-                <div class="tarjeta">
-                    <h3>💉 Vacunas</h3>
-
-                    <p>
-                        Consulta y mantiene actualizado el historial de vacunación.
-                    </p>
-
-                    <a href="#">Ver vacunas</a>
-                </div>
-
-
-                <div class="tarjeta">
-                    <h3>📋 Historial médico</h3>
-
-                    <p>
-                        Mantén organizada la información médica de cada mascota.
-                    </p>
-
-                    <a href="#">Ver historial</a>
                 </div>
 
             </div>
+
+        </div>
+
+
+        <!-- Consultas -->
+        <div class="col-12 col-md-6 col-lg-3">
+
+            <div class="card h-100">
+
+                <div class="card-body">
+
+                    <h5 class="card-title">
+                        🩺 Consultas
+                    </h5>
+
+                    <p class="card-text">
+                        Gestiona las consultas y controles veterinarios realizados.
+                    </p>
+
+                    <a href="#" class="btn btn-primary">
+                        Ver consultas
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Vacunas -->
+        <div class="col-12 col-md-6 col-lg-3">
+
+            <div class="card h-100">
+
+                <div class="card-body">
+
+                    <h5 class="card-title">
+                        💉 Vacunas
+                    </h5>
+
+                    <p class="card-text">
+                        Consulta y mantiene actualizado el historial de vacunación.
+                    </p>
+
+                    <a href="#" class="btn btn-primary">
+                        Ver vacunas
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Historial -->
+        <div class="col-12 col-md-6 col-lg-3">
+
+            <div class="card h-100">
+
+                <div class="card-body">
+
+                    <h5 class="card-title">
+                        📋 Historial médico
+                    </h5>
+
+                    <p class="card-text">
+                        Mantén organizada la información médica de cada mascota.
+                    </p>
+
+                    <a href="#" class="btn btn-primary">
+                        Ver historial
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
 
         </section>
 
@@ -175,7 +247,6 @@
         </section>
 
     </main>
-
 
     <!-- Pie de página -->
     <footer>
