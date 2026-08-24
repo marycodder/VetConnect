@@ -97,7 +97,8 @@
 
         <button
             type="button"
-            class="btn btn-primary">
+            class="btn btn-primary"
+            id="btnRegistrarMascota">
 
             Registrar mascota
 
@@ -357,6 +358,38 @@
 
     </main>
 
+    <!-- TOAST DE CONFIRMACIÓN -->
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+
+    <div
+        id="toastMascota"
+        class="toast"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true">
+
+        <div class="toast-header">
+
+            <strong class="me-auto">
+                VetConnect
+            </strong>
+
+            <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="toast"
+                aria-label="Cerrar">
+            </button>
+
+        </div>
+
+        <div class="toast-body">
+            Mascota registrada correctamente.
+        </div>
+
+    </div>
+
+</div>
 
     <!-- BOOTSTRAP JAVASCRIPT -->
     <script
