@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
 
     <title>VetConnect | Inicio</title>
@@ -15,34 +19,94 @@
     <!-- Encabezado -->
     <header>
         <h1>VetConnect</h1>
-        <p>Sistema de gestión veterinaria</p>
+
     </header>
 
     <!-- Navegación -->
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#nosotros">Nosotros</a>
-        <a href="contacto.html">Contacto</a>
+<!-- Navegación responsive -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">
+                VetConnect
+            </a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menuPrincipal"
+                aria-controls="menuPrincipal"
+                aria-expanded="false"
+                aria-label="Abrir navegación">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div
+                class="collapse navbar-collapse"
+                id="menuPrincipal">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a
+                            class="nav-link active"
+                            aria-current="page"
+                            href="index.html">
+
+                            Inicio
+
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios">
+                            Servicios
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#nosotros">
+                            Nosotros
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">
+                            Contacto
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
     </nav>
 
     <main>
 
         <!-- Sección de bienvenida -->
         <section class="inicio">
-            <h2>Bienvenido a VetConnect</h2>
+            <h2>Sistema de gestión veterinaria</h2>
 
             <p>
                 Una plataforma diseñada para facilitar la gestión de mascotas,
                 consultas veterinarias y controles de salud.
             </p>
 
-            <a href="#servicios" class="boton">Ver servicios</a>
+            <a href="#servicios" class="btn btn-primary">
+            Ver servicios
+            </a>
         </section>
 
 
         <!-- Servicios -->
-        <section id="servicios">
+        <section id="servicios" class="my-5">
 
             <h2>Nuestros servicios</h2>
 
@@ -51,99 +115,205 @@
                 relacionada con tus mascotas.
             </p>
 
-            <div class="contenedor">
+<div class="container">
 
-                <div class="tarjeta">
-                    <h3>🐶 Mascotas</h3>
+    <div class="row g-4">
 
-                    <p>
+        <!-- Mascotas -->
+        <div class="col-12 col-md-6 col-lg-3">
+
+            <div class="card h-100">
+
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-center">
+                        🐶 Mascotas
+                    </h5>
+
+                    <p class="card-text text-center">
                         Registra y administra la información de cada mascota.
                     </p>
 
-                    <a href="#">Ver mascotas</a>
+                    <a href="mascotas.html" class="btn btn-primary mt-auto align-self-center px-3">
+                        Ver mascotas
+                    </a>
+
                 </div>
 
+            </div>
 
-                <div class="tarjeta">
-                    <h3>🩺 Consultas</h3>
+        </div>
 
-                    <p>
+
+        <!-- Consultas -->
+        <div class="col-12 col-md-6 col-lg-3">
+
+            <div class="card h-100">
+
+                <div class="card-body d-flex flex-column">
+
+                    <h5 class="card-title text-center">
+                        🩺 Consultas
+                    </h5>
+
+                    <p class="card-text text-center">
                         Gestiona las consultas y controles veterinarios realizados.
                     </p>
 
-                    <a href="#">Ver consultas</a>
+                    <a href="#" class="btn btn-primary mt-auto align-self-center px-3">
+                        Ver consultas
+                    </a>
+
                 </div>
 
+            </div>
 
-                <div class="tarjeta">
-                    <h3>💉 Vacunas</h3>
+        </div>
 
-                    <p>
+
+        <!-- Vacunas -->
+        <div class="col-12 col-md-6 col-lg-3">
+
+            <div class="card h-100">
+
+                <div class="card-body d-flex flex-column">
+
+                    <h5 class="card-title text-center ">
+                        💉 Vacunas
+                    </h5>
+
+                    <p class="card-text text-center">
                         Consulta y mantiene actualizado el historial de vacunación.
                     </p>
 
-                    <a href="#">Ver vacunas</a>
+                    <a href="#" class="btn btn-primary mt-auto align-self-center px-3">
+                        Ver vacunas
+                    </a>
+
                 </div>
 
+            </div>
 
-                <div class="tarjeta">
-                    <h3>📋 Historial médico</h3>
+        </div>
 
-                    <p>
+
+        <!-- Historial -->
+        <div class="col-12 col-md-6 col-lg-3">
+
+            <div class="card h-100">
+
+                <div class="card-body d-flex flex-column">
+
+                    <h5 class="card-title text-center">
+                        📋 Historial médico
+                    </h5>
+
+                    <p class="card-text text-center">
                         Mantén organizada la información médica de cada mascota.
                     </p>
 
-                    <a href="#">Ver historial</a>
+                    <a href="#" class="btn btn-primary mt-auto align-self-center px-3">
+                        Ver historial
+                    </a>
+
                 </div>
 
             </div>
 
-        </section>
+        </div>
+
+    </div>
+
+</div>
+
+            </section>
 
 
-        <!-- Beneficios -->
-        <section class="beneficios">
+            <!-- Beneficios -->
 
-            <h2>¿Por qué usar VetConnect?</h2>
+            <section class="beneficios py-5">
 
-            <div class="contenedor">
+        <div class="container">
 
-                <div class="tarjeta">
-                    <h3>Información organizada</h3>
+            <h2 class="text-center mb-4">
+                ¿Por qué usar VetConnect?
+            </h2>
 
-                    <p>
-                        Toda la información de las mascotas se encuentra
-                        disponible en un mismo lugar.
-                    </p>
+            <div class="row g-4">
+
+                <div class="col-12 col-md-4">
+
+                    <div class="card h-100">
+
+                        <div class="card-body text-center">
+
+                            <h3 class="h5 card-title">
+                                Información organizada
+                            </h3>
+
+                            <p class="card-text">
+                                Toda la información de las mascotas se encuentra
+                                disponible en un mismo lugar.
+                            </p>
+
+                        </div>
+
+                    </div>
+
                 </div>
 
 
-                <div class="tarjeta">
-                    <h3>Acceso rápido</h3>
+                <div class="col-12 col-md-4">
 
-                    <p>
-                        Consulta fácilmente los antecedentes médicos,
-                        vacunas y controles.
-                    </p>
+                    <div class="card h-100">
+
+                        <div class="card-body text-center">
+
+                            <h3 class="h5 card-title">
+                                Acceso rápido
+                            </h3>
+
+                            <p class="card-text">
+                                Consulta fácilmente los antecedentes médicos,
+                                vacunas y controles.
+                            </p>
+
+                        </div>
+
+                    </div>
+
                 </div>
 
 
-                <div class="tarjeta">
-                    <h3>Mejor seguimiento</h3>
+                <div class="col-12 col-md-4">
 
-                    <p>
-                        Facilita el seguimiento de la salud y los cuidados
-                        de cada mascota.
-                    </p>
+                    <div class="card h-100">
+
+                        <div class="card-body text-center">
+
+                            <h3 class="h5 card-title">
+                                Mejor seguimiento
+                            </h3>
+
+                            <p class="card-text">
+                                Facilita el seguimiento de la salud y los cuidados
+                                de cada mascota.
+                            </p>
+
+                        </div>
+
+                    </div>
+
                 </div>
 
             </div>
 
-        </section>
+        </div>
+
+    </section>
 
 
         <!-- Sobre VetConnect -->
-        <section id="nosotros" class="nosotros">
+        <section id="nosotros" class="nosotros my-5">
 
             <h2>Sobre VetConnect</h2>
 
@@ -161,7 +331,7 @@
 
 
         <!-- Llamado a la acción -->
-        <section class="cta">
+        <section class="cta my-5">
 
             <h2>Cuida su salud. Mantén todo organizado.</h2>
 
@@ -170,12 +340,11 @@
                 de tus mascotas.
             </p>
 
-            <a href="contacto.html" class="boton">Contactar</a>
+            <a href="contacto.html" class="btn btn-light"> Contactar</a>
 
         </section>
 
     </main>
-
 
     <!-- Pie de página -->
     <footer>
@@ -188,6 +357,11 @@
         </p>
 
     </footer>
+
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+</script>
 
 </body>
 

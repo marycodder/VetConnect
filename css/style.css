@@ -285,3 +285,20 @@ footer p {
         padding: 30px 20px;
     }
 }
+
+.card:hover {
+    transform: translateY(-4px);
+    transition: 0.2s;
+}
+
+.btn-primary {
+    background-color: #3f9c9a;
+    border-color: #3f9c9a;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #347f7d;
+    border-color: #347f7d;
+    color: white;
+}
