@@ -5,9 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Mascotas - VetConnect</title>
+
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
+
+        <title>Mascotas - VetConnect</title>
+
 </head>
 
 <body>
@@ -24,21 +30,110 @@
 
     <main>
 
-        <h2>Listado de mascotas</h2>
+    <div class="container mt-5">
 
-        <p>
-            En esta sección se podrán consultar las mascotas registradas
-            en VetConnect.
-        </p>
+        <h2>Mascotas registradas</h2>
 
-        <ul>
-            <li>Firulais - Perro - 5 años</li>
-            <li>Michi - Gato - 3 años</li>
-            <li>Nerón Nevado Antonio - Perro - 7 meses</li>
-            <li>Patricia Sakura - Gato - 2 años</li>
-        </ul>
 
-    </main>
+    <div class="alert alert-success">
+        Mascota registrada correctamente.
+    </div>
+
+    <div class="alert alert-danger">
+        No fue posible registrar la mascota.
+    </div>
+
+    <button
+        class="btn btn-primary mb-3"
+        data-bs-toggle="modal"
+        data-bs-target="#modalMascota">
+
+        Nueva mascota
+
+    </button>
+
+        <div class="table-responsive">
+
+            <table class="table table-striped">
+
+                <thead>
+
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Especie</th>
+                        <th>Edad</th>
+                        <th>Estado</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Firulais</td>
+                        <td>Perro</td>
+                        <td>5</td>
+                        <td>
+                            <span class="badge bg-success">
+                                Activo
+                            </span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Michi</td>
+                        <td>Gato</td>
+                        <td>3</td>
+                        <td>
+                            <span class="badge bg-success">
+                                Activo
+                            </span>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <div class="modal fade" id="modalMascota">
+
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h5 class="modal-title">
+                    Nueva mascota
+                </h5>
+
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal">
+                </button>
+
+            </div>
+
+            <div class="modal-body">
+                Formulario de mascota
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</main>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
 
 </body>
 
